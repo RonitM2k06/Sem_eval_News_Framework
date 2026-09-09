@@ -1,0 +1,15 @@
+﻿# Force GitHub Linguist to detect Python as the primary language
+*.py linguist-detectable=true
+
+# Ignore large datasets and benchmark logs from language stats
+data/** linguist-vendored
+results/** linguist-vendored
+experiments/results/** linguist-vendored
+*.json linguist-detectable=false
+
+# Treat documentation, paper, and frontend assets as documentation/vendored
+paper/** linguist-documentation
+docs/** linguist-documentation
+*.tex linguist-documentation
+*.md linguist-documentation
+frontend/** linguist-vendored
