@@ -1,0 +1,39 @@
+data:
+  batch_size: 4
+  data_dir: data
+  domains:
+  - ukraine_russia
+  - climate_change
+  languages:
+  - bg
+  - en
+  - hi
+  - pt
+  - ru
+  max_entities: 8
+  max_sentences: 16
+  max_seq_len: 512
+experiment_name: narrativegraph_full
+loss:
+  lambda_alignment: 0.5
+  lambda_entity: 1.0
+  lambda_evidence: 0.5
+  lambda_generation: 1.0
+  lambda_narrative: 1.0
+model:
+  dropout: 0.1
+  encoder_name: xlm-roberta-base
+  gnn_dim: 256
+  gnn_heads: 4
+  gnn_layers: 2
+  hidden_dim: 768
+  use_alignment: true
+  use_evidence_conditioning: true
+  use_graph: true
+seed: 42
+training:
+  epochs: 5
+  fp16: true
+  gradient_accumulation_steps: 4
+  lr: 2e-5
+  weight_decay: 0.01

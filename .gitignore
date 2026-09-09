@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# PyTorch Checkpoints
+checkpoints/
+*.pt
+*.pth
+
+# Large Dataset Files
+data/raw/
+# data/processed/ is tracked for benchmark evaluation and reproducibility
+
+# Logs
+*.log
+*_log.txt
+

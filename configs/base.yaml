@@ -1,0 +1,46 @@
+# Base Configuration for NarrativeGraph Experiments
+
+experiment_name: "base_experiment"
+seed: 42
+seeds: [42, 123, 2025]
+
+data:
+  data_dir: "data"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  synthetic_dir: "data/synthetic"
+  languages: ["bg", "en", "hi", "pt", "ru"]
+  domains: ["ukraine_russia", "climate_change"]
+  max_seq_len: 512
+  max_sentences: 16
+  max_entities: 8
+  batch_size: 4
+  num_workers: 0
+
+model:
+  encoder_name: "xlm-roberta-base"
+  hidden_dim: 768
+  gnn_dim: 256
+  gnn_heads: 4
+  gnn_layers: 2
+  dropout: 0.1
+
+loss:
+  lambda_entity: 1.0
+  lambda_narrative: 1.0
+  lambda_evidence: 0.5
+  lambda_alignment: 0.5
+  lambda_generation: 1.0
+
+training:
+  epochs: 5
+  lr: 2e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  gradient_accumulation_steps: 4
+  fp16: true
+  patience: 3
+
+generation:
+  max_length: 80
+  num_beams: 4

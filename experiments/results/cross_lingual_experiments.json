@@ -1,0 +1,66 @@
+[
+  {
+    "lang_a": "en",
+    "lang_b": "ru",
+    "prediction_a": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "prediction_b": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "graph_a_node_count": 6,
+    "graph_b_node_count": 10,
+    "clsc_metrics": {
+      "clsc_score": 0.4982,
+      "node_jaccard_similarity": 0.3636,
+      "edge_density_similarity": 0.7,
+      "language_pair": "en -> ru"
+    },
+    "is_structurally_consistent": false,
+    "experiment_id": "CL-001",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CROSS_LINGUAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "lang_a": "en",
+    "lang_b": "hi",
+    "prediction_a": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "prediction_b": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "graph_a_node_count": 6,
+    "graph_b_node_count": 8,
+    "clsc_metrics": {
+      "clsc_score": 0.6627,
+      "node_jaccard_similarity": 0.5556,
+      "edge_density_similarity": 0.8235,
+      "language_pair": "en -> hi"
+    },
+    "is_structurally_consistent": false,
+    "experiment_id": "CL-002",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CROSS_LINGUAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  }
+]

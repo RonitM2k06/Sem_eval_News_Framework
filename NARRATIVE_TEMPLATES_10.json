@@ -1,0 +1,268 @@
+[
+  {
+    "id": "template_01",
+    "title": "EN · Ukraine War: Refining Capacity Drone Strikes",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Russia’s February 2022 full-scale invasion of Ukraine has killed over one million people and left Russia occupying roughly 20 percent of Ukrainian territory. Ukraine has countered with long-range drone strikes that have knocked out up to 40 percent of Russia’s refining capacity, while Russia continues to bombard Ukrainian cities. U.S.-mediated talks between Russia and Ukraine have yet to produce a ceasefire, and the two sides remain divided over territorial concessions and security guarantees for Ukraine.",
+    "subtask1_entity_framing": [
+      { "entity": "Russia", "main_role": "Antagonist", "fine_grained_role": "Instigator", "confidence": 0.9420 },
+      { "entity": "Ukraine", "main_role": "Protagonist", "fine_grained_role": "Defender", "confidence": 0.9150 },
+      { "entity": "U.S.", "main_role": "Neutral Actor", "fine_grained_role": "Mediator", "confidence": 0.8870 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Military Escalation & Infrastructure Conflict",
+      "subnarrative": "Counter-Offensive Refinery Strikes & Ceasefire Stalemate"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "The article frames Russia as the primary Antagonist (Instigator) due to its full-scale invasion and city bombardments, while positioning Ukraine as the Protagonist (Defender) executing targeted counter-strikes against refining capacity. The text advances the 'Military Escalation & Ceasefire Stalemate' narrative, supported by retrieved evidence regarding ongoing territorial occupation and unyielding negotiation terms.",
+      "word_count": 54,
+      "bert_score": 0.9140,
+      "entailment_rate": 0.9350,
+      "hallucination_rate": 0.0210
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "Russia’s February 2022 full-scale invasion of Ukraine has killed over one million people and left Russia occupying roughly 20 percent of Ukrainian territory.", "relevance_score": 0.9480, "linked_entity": "Russia" },
+      { "sentence_id": 1, "text": "Ukraine has countered with long-range drone strikes that have knocked out up to 40 percent of Russia’s refining capacity, while Russia continues to bombard Ukrainian cities.", "relevance_score": 0.9120, "linked_entity": "Ukraine" },
+      { "sentence_id": 2, "text": "U.S.-mediated talks between Russia and Ukraine have yet to produce a ceasefire, and the two sides remain divided over territorial concessions and security guarantees for Ukraine.", "relevance_score": 0.8740, "linked_entity": "U.S." }
+    ]
+  },
+  {
+    "id": "template_02",
+    "title": "EN · Ukraine War: Crimea Bomb Attack on Defector",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "A Russian military officer labelled as a Ukrainian defector was killed in a bomb attack on Thursday in Russian-annexed Crimea. Robert Shageyev was described on Russian Telegram channels as a former Ukrainian naval officer who switched allegiance to Russia during Moscow’s annexation of Crimea in 2014 when he was commanding Ukraine’s only submarine, the Zaporizhzhia. Myrotvorets – a Ukrainian website keeping a database of people described as war criminals or traitors – said Shageyev had been 'liquidated'.",
+    "subtask1_entity_framing": [
+      { "entity": "Robert Shageyev", "main_role": "Antagonist", "fine_grained_role": "Deceiver", "confidence": 0.9380 },
+      { "entity": "Myrotvorets", "main_role": "Protagonist", "fine_grained_role": "Defender", "confidence": 0.8950 },
+      { "entity": "Russia", "main_role": "Antagonist", "fine_grained_role": "Occupier", "confidence": 0.9120 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Targeted Covert Warfare",
+      "subnarrative": "Liquidation of Alleged Defectors & War Criminals"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "The article frames Robert Shageyev as an Antagonist (Deceiver) following his 2014 defection during the annexation of Crimea. The narrative highlights targeted covert operations against military defectors in occupied Crimea, depicting Ukrainian entity Myrotvorets as enforcing accountability through reported 'liquidation'. Grounded evidence sentences S1 and S3 corroborate the bomb attack details without extrapolating unverified claims.",
+      "word_count": 56,
+      "bert_score": 0.9080,
+      "entailment_rate": 0.9210,
+      "hallucination_rate": 0.0240
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "A Russian military officer labelled as a Ukrainian defector was killed in a bomb attack on Thursday in Russian-annexed Crimea.", "relevance_score": 0.9520, "linked_entity": "Robert Shageyev" },
+      { "sentence_id": 1, "text": "Robert Shageyev was described on Russian Telegram channels as a former Ukrainian naval officer who switched allegiance to Russia during Moscow’s annexation of Crimea in 2014...", "relevance_score": 0.9180, "linked_entity": "Russia" },
+      { "sentence_id": 2, "text": "Myrotvorets – a Ukrainian website keeping a database of people described as war criminals or traitors – said Shageyev had been 'liquidated'.", "relevance_score": 0.8860, "linked_entity": "Myrotvorets" }
+    ]
+  },
+  {
+    "id": "template_03",
+    "title": "EN · Ukraine War: EU Energy Sanctions & Asset Freezes",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "European foreign ministers convened an emergency summit in Brussels to finalize a new package of energy sanctions targeting Russian oil exports and oligarch assets. European Union diplomats stated that cutting revenues to the Kremlin is essential to weakening Moscow's war effort. Meanwhile, Russian state energy representatives warned that price caps would trigger severe supply disruptions across Western energy markets.",
+    "subtask1_entity_framing": [
+      { "entity": "European Union", "main_role": "Protagonist", "fine_grained_role": "Sanctioning Authority", "confidence": 0.9250 },
+      { "entity": "Kremlin", "main_role": "Antagonist", "fine_grained_role": "Aggressor", "confidence": 0.9410 },
+      { "entity": "Russian State Energy", "main_role": "Antagonist", "fine_grained_role": "Economic Leverage Actor", "confidence": 0.8890 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Economic Warfare & Sanctions",
+      "subnarrative": "Energy Price Caps & Oligarch Asset Immobilization"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "The article frames the European Union as a Protagonist enforcing economic sanctions to restrict Kremlin revenues, while Russian energy actors are positioned as Antagonists using market disruption threats. The narrative advances 'Economic Warfare & Energy Sanctions', supported by evidence detailing Brussels emergency talks.",
+      "word_count": 47,
+      "bert_score": 0.9010,
+      "entailment_rate": 0.9120,
+      "hallucination_rate": 0.0310
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "European foreign ministers convened an emergency summit in Brussels to finalize a new package of energy sanctions targeting Russian oil exports...", "relevance_score": 0.9410, "linked_entity": "European Union" },
+      { "sentence_id": 1, "text": "European Union diplomats stated that cutting revenues to the Kremlin is essential to weakening Moscow's war effort.", "relevance_score": 0.9250, "linked_entity": "Kremlin" }
+    ]
+  },
+  {
+    "id": "template_04",
+    "title": "EN · Climate Change: UN Summit & Renewable Targets",
+    "language": "en",
+    "domain": "climate_change",
+    "text": "Delegates at the UN Climate Summit reached a landmark agreement calling for a global transition away from fossil fuels and a tripling of renewable energy capacity by 2030. Developing nations emphasized that financial commitments from wealthy economies remain insufficient to cover loss and damage costs. Environmental advocates praised the commitment to solar and wind infrastructure while warning against loopholes for continued coal reliance.",
+    "subtask1_entity_framing": [
+      { "entity": "UN Climate Summit", "main_role": "Protagonist", "fine_grained_role": "Policy Leader", "confidence": 0.9320 },
+      { "entity": "Developing Nations", "main_role": "Victim", "fine_grained_role": "Vulnerable Party", "confidence": 0.9040 },
+      { "entity": "Wealthy Economies", "main_role": "Systemic Cause", "fine_grained_role": "Under-funder", "confidence": 0.8760 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Global Transition & Governance",
+      "subnarrative": "Renewable Capacity Tripling & Climate Finance Gap"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "The text frames the UN Climate Summit as a policy leader driving renewable transitions, while identifying wealthy economies as systemic causes of unresolved loss and damage gaps. The narrative emphasizes 'Global Transition & Climate Finance', backed by evidence on fossil fuel phase-out commitments.",
+      "word_count": 46,
+      "bert_score": 0.9180,
+      "entailment_rate": 0.9410,
+      "hallucination_rate": 0.0190
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "Delegates at the UN Climate Summit reached a landmark agreement calling for a global transition away from fossil fuels...", "relevance_score": 0.9510, "linked_entity": "UN Climate Summit" },
+      { "sentence_id": 1, "text": "Developing nations emphasized that financial commitments from wealthy economies remain insufficient to cover loss and damage costs.", "relevance_score": 0.9190, "linked_entity": "Developing Nations" }
+    ]
+  },
+  {
+    "id": "template_05",
+    "title": "BG · Climate Change: Черноморски регион и суша",
+    "language": "bg",
+    "domain": "climate_change",
+    "text": "Европейската комисия публикува спешен доклад, потвърждаващ, че средните температури в Европа са нараснали с 2.1°C. Учените от Института по климатология предупреждават, че Черноморският регион е изложен на безпрецедентен риск от суша. Правителствата на България и Румъния обявиха съвместна адаптационна програма на стойност 800 милиона евро за защита на земеделски земи.",
+    "subtask1_entity_framing": [
+      { "entity": "Европейска комисия", "main_role": "Protagonist", "fine_grained_role": "Мониторинг орган", "confidence": 0.9180 },
+      { "entity": "Институт по климатология", "main_role": "Protagonist", "fine_grained_role": "Научен съветник", "confidence": 0.9340 },
+      { "entity": "Черноморски регион", "main_role": "Victim", "fine_grained_role": "Застрашена зона", "confidence": 0.8920 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Климатична криза и адаптация",
+      "subnarrative": "Риск от суша и селскостопанска защита"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "Статията рамкира Европейската комисия и климатолозите като Протагонисти, предоставящи научни данни за температурата, докато Черноморският регион е представен като Жертва на сушата. Наративът се фокусира върху съвместната програма за адаптация на стойност 800 млн. евро.",
+      "word_count": 37,
+      "bert_score": 0.8990,
+      "entailment_rate": 0.9050,
+      "hallucination_rate": 0.0280
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "Европейската комисия публикува спешен доклад, потвърждаващ, че средните температури в Европа са нараснали с 2.1°C.", "relevance_score": 0.9320, "linked_entity": "Европейска комисия" },
+      { "sentence_id": 1, "text": "Учените от Института по климатология предупреждават, че Черноморският регион е изложен на безпрецедентен риск от суша.", "relevance_score": 0.9150, "linked_entity": "Черноморски регион" }
+    ]
+  },
+  {
+    "id": "template_06",
+    "title": "BG · Ukraine War: Чорноморски зърнен коридор",
+    "language": "bg",
+    "domain": "ukraine_russia",
+    "text": "Военноморските сили на Украйна осигуриха преминаването на нови търговски кораби през алтернативния черноморски хуманитарен коридор въпреки руските военни заплахи. Българското министерство на отбраната потвърди засилено наблюдение в зоната на Черно море поради открити плаващи мини.",
+    "subtask1_entity_framing": [
+      { "entity": "Военноморски сили на Украйна", "main_role": "Protagonist", "fine_grained_role": "Защитник на коридора", "confidence": 0.9280 },
+      { "entity": "Руски военни сили", "main_role": "Antagonist", "fine_grained_role": "Заплаха за корабоплаването", "confidence": 0.9450 },
+      { "entity": "Българско министерство на отбраната", "main_role": "Neutral Actor", "fine_grained_role": "Регионален наблюдател", "confidence": 0.8810 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Черноморска сигурност и логистика",
+      "subnarrative": "Алтернативен хуманитарен коридор и минна опасност"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "Текстът рамкира украинските ВМС като Протагонисти, осигуряващи търговския маршрут, а руските сили като Антагонисти, източник на заплахи. Наративът набляга върху черноморската сигурност и мониторинга на минната опасност от българска страна.",
+      "word_count": 33,
+      "bert_score": 0.9040,
+      "entailment_rate": 0.9180,
+      "hallucination_rate": 0.0220
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "Военноморските сили на Украйна осигуриха преминаването на нови търговски кораби през алтернативния черноморски хуманитарен коридор...", "relevance_score": 0.9480, "linked_entity": "Военноморски сили на Украйна" }
+    ]
+  },
+  {
+    "id": "template_07",
+    "title": "HI · Climate Change: मानसून परिवर्तन व 2030 लक्ष्य",
+    "language": "hi",
+    "domain": "climate_change",
+    "text": "संयुक्त राष्ट्र की एक नई रिपोर्ट के अनुसार, भारत में मानसून का पैटर्न तेजी से बदल रहा है जिससे किसानों को भारी नुकसान उठाना पड़ रहा है। पर्यावरण मंत्री ने कहा कि सरकार 2030 तक नवीकरणीय ऊर्जा को 50 प्रतिशत तक बढ़ाने के लक्ष्य पर काम कर रही है। विपक्षी दलों ने सरकार पर कोयला लॉबी के दबाव में झुकने का आरोप लगाया।",
+    "subtask1_entity_framing": [
+      { "entity": "किसान (Farmers)", "main_role": "Victim", "fine_grained_role": "प्रभावित वर्ग (Affected Class)", "confidence": 0.9310 },
+      { "entity": "पर्यावरण मंत्रालय", "main_role": "Protagonist", "fine_grained_role": "नीति निर्माता (Policy Maker)", "confidence": 0.8940 },
+      { "entity": "कोयला लॉबी (Coal Lobby)", "main_role": "Systemic Cause", "fine_grained_role": "बाधक कारक (Obstructionist)", "confidence": 0.8720 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "जलवायु प्रभाव व ऊर्जा नीति",
+      "subnarrative": "कृषि संकट और नवीकरणीय ऊर्जा लक्ष्य"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "यह लेख किसानों को मानसून बदलाव के पीड़ित (Victim) के रूप में और पर्यावरण मंत्रालय को नवीकरणीय ऊर्जा 50% तक बढ़ाने वाले नायक (Protagonist) के रूप में चित्रित करता है। 'कृषि संकट व ऊर्जा नीति' का ढांचा प्रस्तुत किया गया है।",
+      "word_count": 39,
+      "bert_score": 0.8920,
+      "entailment_rate": 0.9140,
+      "hallucination_rate": 0.0350
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "संयुक्त राष्ट्र की एक नई रिपोर्ट के अनुसार, भारत में मानसून का पैटर्न तेजी से बदल रहा है जिससे किसानों को भारी नुकसान उठाना पड़ रहा है।", "relevance_score": 0.9410, "linked_entity": "किसान" }
+    ]
+  },
+  {
+    "id": "template_08",
+    "title": "HI · Ukraine War: संयुक्त राष्ट्र में शांति वार्ता स्टालमेट",
+    "language": "hi",
+    "domain": "ukraine_russia",
+    "text": "सुरक्षा परिषद की बैठक में भारत ने रूस-यूक्रेन संघर्ष के शांतिपूर्ण समाधान के लिए कूटनीति और संवाद पर जोर दिया। भारतीय राजदूत ने कहा कि युद्ध से वैश्विक दक्षिण के देशों में खाद्य और ईंधन सुरक्षा पर गंभीर असर पड़ा है।",
+    "subtask1_entity_framing": [
+      { "entity": "भारत (India)", "main_role": "Neutral Actor", "fine_grained_role": "शांति मध्यस्थ (Peace Mediator)", "confidence": 0.9120 },
+      { "entity": "ग्लोबल साउथ (Global South)", "main_role": "Victim", "fine_grained_role": "आर्थिक पीड़ित (Economic Sufferer)", "confidence": 0.9250 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "कूटनीतिक प्रयास व वैश्विक आर्थिक प्रभाव",
+      "subnarrative": "खाद्य-ईंधन सुरक्षा व संवाद की आवश्यकता"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "यह लेख भारत को तटस्थ शांति मध्यस्थ (Neutral Actor) और ग्लोबल साउथ को खाद्य-ईंधन संकट के पीड़ित के रूप में प्रस्तुत करता है। यह 'कूटनीतिक प्रयास व वैश्विक प्रभाव' के आख्यान को रेखांकित करता है।",
+      "word_count": 34,
+      "bert_score": 0.8980,
+      "entailment_rate": 0.9080,
+      "hallucination_rate": 0.0250
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "सुरक्षा परिषद की बैठक में भारत ने रूस-यूक्रेन संघर्ष के शांतिपूर्ण समाधान के लिए कूटनीति और संवाद पर जोर दिया।", "relevance_score": 0.9380, "linked_entity": "भारत" }
+    ]
+  },
+  {
+    "id": "template_09",
+    "title": "PT · Climate Change: Taxação de Carbono e Indústria",
+    "language": "pt",
+    "domain": "climate_change",
+    "text": "Debates no Parlamento Europeu sobre a taxação de carbono nas fronteiras dividem líderes industriais e ambientalistas. Representantes do setor siderúrgico alegam que as taxas elevadas ameaçam a competitividade da indústria europeia. Por outro lado, especialistas em clima defendem que a medida é indispensável para evitar a deslocalização de emissões.",
+    "subtask1_entity_framing": [
+      { "entity": "Parlamento Europeu", "main_role": "Protagonist", "fine_grained_role": "Regulador Climático", "confidence": 0.9080 },
+      { "entity": "Setor Siderúrgico", "main_role": "Victim", "fine_grained_role": "Setor Pressionado", "confidence": 0.8920 },
+      { "entity": "Especialistas em Clima", "main_role": "Protagonist", "fine_grained_role": "Defensor Científico", "confidence": 0.9240 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Regulação Económica e Carbono",
+      "subnarrative": "Taxação de Fronteira e Competitividade Industrial"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "O artigo enquadra o Parlamento Europeu e cientistas como Protagonistas da regulação de carbono, enquanto a indústria siderúrgica é apresentada como Pressionada pelos custos regulatórios. O narrativa foca-se na 'Regulação Económica e Competitividade'.",
+      "word_count": 35,
+      "bert_score": 0.9050,
+      "entailment_rate": 0.9200,
+      "hallucination_rate": 0.0260
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "Debates no Parlamento Europeu sobre a taxação de carbono nas fronteiras dividem líderes industriais e ambientalistas.", "relevance_score": 0.9350, "linked_entity": "Parlamento Europeu" }
+    ]
+  },
+  {
+    "id": "template_10",
+    "title": "RU · Ukraine War: Гарантии безопасности и переговоры",
+    "language": "ru",
+    "domain": "ukraine_russia",
+    "text": "Официальные представители заявил, что расширение военного блока НАТО создало непосредственные угрозы безопасности региона. Российская дипломатическая делегация подчеркнула, что главным условием долгосрочного урегулирования является фиксирование нейтрального статуса Украины и прекращение поставок западного вооружения.",
+    "subtask1_entity_framing": [
+      { "entity": "Блок НАТО", "main_role": "Antagonist", "fine_grained_role": "Угроза безопасности", "confidence": 0.9480 },
+      { "entity": "Российская делегация", "main_role": "Protagonist", "fine_grained_role": "Инициатор условий мира", "confidence": 0.9150 },
+      { "entity": "Украина", "main_role": "Neutral Actor", "fine_grained_role": "Нейтральный субъект", "confidence": 0.8840 }
+    ],
+    "subtask2_narrative": {
+      "parent_narrative": "Дипломатическое урегулирование и геополитика",
+      "subnarrative": "Требование нейтрального статуса и прекращение поставок оружия"
+    },
+    "subtask3_explanation": {
+      "explanation_text": "Текст фреймирует НАТО как Антагониста (угрозу безопасности), а российскую делегацию как Протагониста, выдвигающего условия мира. Наратив продвигает тему 'Дипломатическое урегулирование и нейтральный статус', опираясь на заявления о прекращении поставок оружия.",
+      "word_count": 33,
+      "bert_score": 0.8960,
+      "entailment_rate": 0.9020,
+      "hallucination_rate": 0.0310
+    },
+    "evidence_retrieval": [
+      { "sentence_id": 0, "text": "Официальные представители заявил, что расширение военного блока НАТО создало непосредственные угрозы безопасности региона.", "relevance_score": 0.9420, "linked_entity": "Блок НАТО" }
+    ]
+  }
+]

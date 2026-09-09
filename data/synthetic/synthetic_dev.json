@@ -1,0 +1,1089 @@
+[
+  {
+    "article_id": "art_dev_0041",
+    "language": "pt",
+    "domain": "ukraine_russia",
+    "text": "Declarações oficiais da OTAN afirmaram que a expansão visava garantir a estabilidade regional. Por outro lado, diplomatas russos sustentam que as decisões ocidentais provocaram a crise. As sanções econômicas geraram impactos diretos nos preços de energia na Europa.",
+    "sentences": [
+      "Declarações oficiais da OTAN afirmaram que a expansão visava garantir a estabilidade regional",
+      "Por outro lado, diplomatas russos sustentam que as decisões ocidentais provocaram a crise",
+      "As sanções econômicas geraram impactos diretos nos preços de energia na Europa"
+    ],
+    "entities": [
+      {
+        "mention": "NATO",
+        "start_offset": 0,
+        "end_offset": 4,
+        "roles": [
+          "Villain"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Ukrainian Regime Legitimacy",
+    "subnarrative": "Far-right extremism in Ukrainian military",
+    "evidence_sentence_ids": [
+      2
+    ],
+    "explanation": "The article highlights how NATO acts as villain within the scope of ukrainian regime legitimacy, specifically referencing 'Far-right extremism in Ukrainian military' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0042",
+    "language": "pt",
+    "domain": "climate_change",
+    "text": "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética. Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial.",
+    "sentences": [
+      "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética",
+      "Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Climate alarmism enriches elites",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as protagonist within the scope of political motivation, specifically referencing 'Climate alarmism enriches elites' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0043",
+    "language": "pt",
+    "domain": "ukraine_russia",
+    "text": "Relatórios de observadores internacionais destacam a urgência de negociações de paz para cessar as hostilidades.",
+    "sentences": [
+      "Relatórios de observadores internacionais destacam a urgência de negociações de paz para cessar as hostilidades"
+    ],
+    "entities": [
+      {
+        "mention": "NATO",
+        "start_offset": 0,
+        "end_offset": 4,
+        "roles": [
+          "Innocent"
+        ],
+        "main_role": "Innocent"
+      }
+    ],
+    "narrative": "Ukrainian Regime Legitimacy",
+    "subnarrative": "Far-right extremism in Ukrainian military",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how NATO acts as innocent within the scope of ukrainian regime legitimacy, specifically referencing 'Far-right extremism in Ukrainian military' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0044",
+    "language": "pt",
+    "domain": "climate_change",
+    "text": "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética. Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial.",
+    "sentences": [
+      "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética",
+      "Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Villain"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "CO2 is beneficial for plants",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as villain within the scope of climate science skepticism, specifically referencing 'CO2 is beneficial for plants' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0045",
+    "language": "bg",
+    "domain": "climate_change",
+    "text": "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите. Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии.",
+    "sentences": [
+      "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите",
+      "Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии"
+    ],
+    "entities": [
+      {
+        "mention": "Industrial Union",
+        "start_offset": 0,
+        "end_offset": 16,
+        "roles": [
+          "Innocent"
+        ],
+        "main_role": "Innocent"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Climate agenda is for global control",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Industrial Union acts as innocent within the scope of political motivation, specifically referencing 'Climate agenda is for global control' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0046",
+    "language": "bg",
+    "domain": "ukraine_russia",
+    "text": "Официални изявления от представители на НАТО посочват, че разширяването на съюза е защитна мярка. Руските дипломати обаче твърдят, че това създава директно напрежение в региона. Санкциите засегнаха европейската икономика и енергийните пазари.",
+    "sentences": [
+      "Официални изявления от представители на НАТО посочват, че разширяването на съюза е защитна мярка",
+      "Руските дипломати обаче твърдят, че това създава директно напрежение в региона",
+      "Санкциите засегнаха европейската икономика и енергийните пазари"
+    ],
+    "entities": [
+      {
+        "mention": "UN Observers",
+        "start_offset": 0,
+        "end_offset": 12,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "Western media spreads lies about Russia",
+    "evidence_sentence_ids": [
+      2
+    ],
+    "explanation": "The article highlights how UN Observers acts as victim within the scope of western disinformation & aggression, specifically referencing 'Western media spreads lies about Russia' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0047",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Official statements from NATO members claimed that security guarantees were required for eastern expansion. However, Russian diplomats argued that Western expansion directly provoked tension. Energy prices in Europe increased sharply after trade sanctions were implemented. International observers called for immediate cease-fire negotiations in Geneva.",
+    "sentences": [
+      "Official statements from NATO members claimed that security guarantees were required for eastern expansion",
+      "However, Russian diplomats argued that Western expansion directly provoked tension",
+      "Energy prices in Europe increased sharply after trade sanctions were implemented",
+      "International observers called for immediate cease-fire negotiations in Geneva"
+    ],
+    "entities": [
+      {
+        "mention": "Russia",
+        "start_offset": 117,
+        "end_offset": 123,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "Sanctions destroy European economy",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Russia acts as antagonist within the scope of western disinformation & aggression, specifically referencing 'Sanctions destroy European economy' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0048",
+    "language": "en",
+    "domain": "climate_change",
+    "text": "Environmental activists urge governments to phase out fossil fuel subsidies immediately. Economists suggest that green transition investments will create long-term employment in solar and wind sectors.",
+    "sentences": [
+      "Environmental activists urge governments to phase out fossil fuel subsidies immediately",
+      "Economists suggest that green transition investments will create long-term employment in solar and wind sectors"
+    ],
+    "entities": [
+      {
+        "mention": "Industrial Union",
+        "start_offset": 0,
+        "end_offset": 16,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Taxation under green pretext",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Industrial Union acts as protagonist within the scope of political motivation, specifically referencing 'Taxation under green pretext' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0049",
+    "language": "hi",
+    "domain": "climate_change",
+    "text": "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।",
+    "sentences": [
+      "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।"
+    ],
+    "entities": [
+      {
+        "mention": "Climate Scientists",
+        "start_offset": 0,
+        "end_offset": 18,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Climate alarmism enriches elites",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Climate Scientists acts as victim within the scope of political motivation, specifically referencing 'Climate alarmism enriches elites' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0050",
+    "language": "ru",
+    "domain": "climate_change",
+    "text": "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы. В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии.",
+    "sentences": [
+      "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы",
+      "В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "Global warming is a natural cycle",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as protagonist within the scope of climate science skepticism, specifically referencing 'Global warming is a natural cycle' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0051",
+    "language": "en",
+    "domain": "climate_change",
+    "text": "Environmental activists urge governments to phase out fossil fuel subsidies immediately. Economists suggest that green transition investments will create long-term employment in solar and wind sectors.",
+    "sentences": [
+      "Environmental activists urge governments to phase out fossil fuel subsidies immediately",
+      "Economists suggest that green transition investments will create long-term employment in solar and wind sectors"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "CO2 is beneficial for plants",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as hero within the scope of climate science skepticism, specifically referencing 'CO2 is beneficial for plants' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0052",
+    "language": "hi",
+    "domain": "climate_change",
+    "text": "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।",
+    "sentences": [
+      "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।"
+    ],
+    "entities": [
+      {
+        "mention": "Fossil Fuel Coalition",
+        "start_offset": 0,
+        "end_offset": 21,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "Global warming is a natural cycle",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Fossil Fuel Coalition acts as hero within the scope of climate science skepticism, specifically referencing 'Global warming is a natural cycle' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0053",
+    "language": "hi",
+    "domain": "climate_change",
+    "text": "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।",
+    "sentences": [
+      "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Renewables are unreliable",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as hero within the scope of economic impact & energy policy, specifically referencing 'Renewables are unreliable' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0054",
+    "language": "pt",
+    "domain": "ukraine_russia",
+    "text": "Relatórios de observadores internacionais destacam a urgência de negociações de paz para cessar as hostilidades.",
+    "sentences": [
+      "Relatórios de observadores internacionais destacam a urgência de negociações de paz para cessar as hostilidades"
+    ],
+    "entities": [
+      {
+        "mention": "UN Observers",
+        "start_offset": 0,
+        "end_offset": 12,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Ukrainian Regime Legitimacy",
+    "subnarrative": "Ukraine is a puppet of the US",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how UN Observers acts as hero within the scope of ukrainian regime legitimacy, specifically referencing 'Ukraine is a puppet of the US' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0055",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Reports from Kyiv highlighted structural damage to military infrastructure during recent strikes. Western media outlets reported on foreign aid packages sent to assist civilian rehabilitation. Independent journalists documented ongoing diplomatic efforts aimed at resolving territorial disputes peacefully.",
+    "sentences": [
+      "Reports from Kyiv highlighted structural damage to military infrastructure during recent strikes",
+      "Western media outlets reported on foreign aid packages sent to assist civilian rehabilitation",
+      "Independent journalists documented ongoing diplomatic efforts aimed at resolving territorial disputes peacefully"
+    ],
+    "entities": [
+      {
+        "mention": "Western media",
+        "start_offset": 98,
+        "end_offset": 111,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Ukrainian Regime Legitimacy",
+    "subnarrative": "Ukrainian leadership is corrupt",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Western media acts as hero within the scope of ukrainian regime legitimacy, specifically referencing 'Ukrainian leadership is corrupt' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0056",
+    "language": "bg",
+    "domain": "climate_change",
+    "text": "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите. Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии.",
+    "sentences": [
+      "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите",
+      "Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии"
+    ],
+    "entities": [
+      {
+        "mention": "Industrial Union",
+        "start_offset": 0,
+        "end_offset": 16,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Climate agenda is for global control",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Industrial Union acts as hero within the scope of political motivation, specifically referencing 'Climate agenda is for global control' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0057",
+    "language": "bg",
+    "domain": "climate_change",
+    "text": "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите. Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии.",
+    "sentences": [
+      "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите",
+      "Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии"
+    ],
+    "entities": [
+      {
+        "mention": "Fossil Fuel Coalition",
+        "start_offset": 0,
+        "end_offset": 21,
+        "roles": [
+          "Innocent"
+        ],
+        "main_role": "Innocent"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Renewables are unreliable",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Fossil Fuel Coalition acts as innocent within the scope of economic impact & energy policy, specifically referencing 'Renewables are unreliable' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0058",
+    "language": "pt",
+    "domain": "climate_change",
+    "text": "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética. Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial.",
+    "sentences": [
+      "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética",
+      "Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "Climate models are unreliable",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as antagonist within the scope of climate science skepticism, specifically referencing 'Climate models are unreliable' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0059",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Reports from Kyiv highlighted structural damage to military infrastructure during recent strikes. Western media outlets reported on foreign aid packages sent to assist civilian rehabilitation. Independent journalists documented ongoing diplomatic efforts aimed at resolving territorial disputes peacefully.",
+    "sentences": [
+      "Reports from Kyiv highlighted structural damage to military infrastructure during recent strikes",
+      "Western media outlets reported on foreign aid packages sent to assist civilian rehabilitation",
+      "Independent journalists documented ongoing diplomatic efforts aimed at resolving territorial disputes peacefully"
+    ],
+    "entities": [
+      {
+        "mention": "Kyiv",
+        "start_offset": 13,
+        "end_offset": 17,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "NATO provoked the conflict",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Kyiv acts as protagonist within the scope of western disinformation & aggression, specifically referencing 'NATO provoked the conflict' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0060",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Official statements from NATO members claimed that security guarantees were required for eastern expansion. However, Russian diplomats argued that Western expansion directly provoked tension. Energy prices in Europe increased sharply after trade sanctions were implemented. International observers called for immediate cease-fire negotiations in Geneva.",
+    "sentences": [
+      "Official statements from NATO members claimed that security guarantees were required for eastern expansion",
+      "However, Russian diplomats argued that Western expansion directly provoked tension",
+      "Energy prices in Europe increased sharply after trade sanctions were implemented",
+      "International observers called for immediate cease-fire negotiations in Geneva"
+    ],
+    "entities": [
+      {
+        "mention": "Western media",
+        "start_offset": 0,
+        "end_offset": 13,
+        "roles": [
+          "Innocent"
+        ],
+        "main_role": "Innocent"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "Western media spreads lies about Russia",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Western media acts as innocent within the scope of western disinformation & aggression, specifically referencing 'Western media spreads lies about Russia' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0061",
+    "language": "hi",
+    "domain": "ukraine_russia",
+    "text": "कूटनीतिक प्रयासों के बावजूद शांति वार्ता बाधित रही है। अंतर्राष्ट्रीय समुदाय ने मानवीय सहायता और युद्धविराम की अपील की है।",
+    "sentences": [
+      "कूटनीतिक प्रयासों के बावजूद शांति वार्ता बाधित रही है। अंतर्राष्ट्रीय समुदाय ने मानवीय सहायता और युद्धविराम की अपील की है।"
+    ],
+    "entities": [
+      {
+        "mention": "Russia",
+        "start_offset": 0,
+        "end_offset": 6,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Peace & Negotiations",
+    "subnarrative": "Negotiations are blocked by Ukraine",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Russia acts as antagonist within the scope of peace & negotiations, specifically referencing 'Negotiations are blocked by Ukraine' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0062",
+    "language": "bg",
+    "domain": "climate_change",
+    "text": "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите. Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии.",
+    "sentences": [
+      "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите",
+      "Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Renewables are unreliable",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as protagonist within the scope of economic impact & energy policy, specifically referencing 'Renewables are unreliable' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0063",
+    "language": "bg",
+    "domain": "ukraine_russia",
+    "text": "Официални изявления от представители на НАТО посочват, че разширяването на съюза е защитна мярка. Руските дипломати обаче твърдят, че това създава директно напрежение в региона. Санкциите засегнаха европейската икономика и енергийните пазари.",
+    "sentences": [
+      "Официални изявления от представители на НАТО посочват, че разширяването на съюза е защитна мярка",
+      "Руските дипломати обаче твърдят, че това създава директно напрежение в региона",
+      "Санкциите засегнаха европейската икономика и енергийните пазари"
+    ],
+    "entities": [
+      {
+        "mention": "UN Observers",
+        "start_offset": 0,
+        "end_offset": 12,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Russian Military Actions",
+    "subnarrative": "Special military operation is defensive",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how UN Observers acts as hero within the scope of russian military actions, specifically referencing 'Special military operation is defensive' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0064",
+    "language": "pt",
+    "domain": "ukraine_russia",
+    "text": "Declarações oficiais da OTAN afirmaram que a expansão visava garantir a estabilidade regional. Por outro lado, diplomatas russos sustentam que as decisões ocidentais provocaram a crise. As sanções econômicas geraram impactos diretos nos preços de energia na Europa.",
+    "sentences": [
+      "Declarações oficiais da OTAN afirmaram que a expansão visava garantir a estabilidade regional",
+      "Por outro lado, diplomatas russos sustentam que as decisões ocidentais provocaram a crise",
+      "As sanções econômicas geraram impactos diretos nos preços de energia na Europa"
+    ],
+    "entities": [
+      {
+        "mention": "European Union",
+        "start_offset": 0,
+        "end_offset": 14,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Peace & Negotiations",
+    "subnarrative": "Negotiations are blocked by Ukraine",
+    "evidence_sentence_ids": [
+      2
+    ],
+    "explanation": "The article highlights how European Union acts as antagonist within the scope of peace & negotiations, specifically referencing 'Negotiations are blocked by Ukraine' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0065",
+    "language": "bg",
+    "domain": "climate_change",
+    "text": "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите. Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии.",
+    "sentences": [
+      "Някои икономисти предупреждават, че бързият преход към зелена енергия може да повиши цените за потребителите",
+      "Климатичните учени обаче поддържат необходимостта от намаляване на въглеродните емисии"
+    ],
+    "entities": [
+      {
+        "mention": "Industrial Union",
+        "start_offset": 0,
+        "end_offset": 16,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Climate policies destroy industry",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Industrial Union acts as antagonist within the scope of economic impact & energy policy, specifically referencing 'Climate policies destroy industry' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0066",
+    "language": "ru",
+    "domain": "ukraine_russia",
+    "text": "Официальные представители заявили, что расширение блока НАТО создало угрозы безопасности. Дипломатические источники подчеркивают необходимость гарантий нейтрального статуса. Экономические санкции вызвали рост цен на энергоресурсы в Европе.",
+    "sentences": [
+      "Официальные представители заявили, что расширение блока НАТО создало угрозы безопасности",
+      "Дипломатические источники подчеркивают необходимость гарантий нейтрального статуса",
+      "Экономические санкции вызвали рост цен на энергоресурсы в Европе"
+    ],
+    "entities": [
+      {
+        "mention": "Russia",
+        "start_offset": 0,
+        "end_offset": 6,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Russian Military Actions",
+    "subnarrative": "Special military operation is defensive",
+    "evidence_sentence_ids": [
+      2
+    ],
+    "explanation": "The article highlights how Russia acts as hero within the scope of russian military actions, specifically referencing 'Special military operation is defensive' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0067",
+    "language": "ru",
+    "domain": "climate_change",
+    "text": "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы. В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии.",
+    "sentences": [
+      "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы",
+      "В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии"
+    ],
+    "entities": [
+      {
+        "mention": "Climate Scientists",
+        "start_offset": 0,
+        "end_offset": 18,
+        "roles": [
+          "Hero"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Green energy hurts the poor",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Climate Scientists acts as hero within the scope of economic impact & energy policy, specifically referencing 'Green energy hurts the poor' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0068",
+    "language": "ru",
+    "domain": "climate_change",
+    "text": "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы. В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии.",
+    "sentences": [
+      "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы",
+      "В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии"
+    ],
+    "entities": [
+      {
+        "mention": "Industrial Union",
+        "start_offset": 0,
+        "end_offset": 16,
+        "roles": [
+          "Villain"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Climate policies destroy industry",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Industrial Union acts as villain within the scope of economic impact & energy policy, specifically referencing 'Climate policies destroy industry' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0069",
+    "language": "ru",
+    "domain": "ukraine_russia",
+    "text": "Официальные представители заявили, что расширение блока НАТО создало угрозы безопасности. Дипломатические источники подчеркивают необходимость гарантий нейтрального статуса. Экономические санкции вызвали рост цен на энергоресурсы в Европе.",
+    "sentences": [
+      "Официальные представители заявили, что расширение блока НАТО создало угрозы безопасности",
+      "Дипломатические источники подчеркивают необходимость гарантий нейтрального статуса",
+      "Экономические санкции вызвали рост цен на энергоресурсы в Европе"
+    ],
+    "entities": [
+      {
+        "mention": "UN Observers",
+        "start_offset": 0,
+        "end_offset": 12,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Russian Military Actions",
+    "subnarrative": "Russian military superiority",
+    "evidence_sentence_ids": [
+      2
+    ],
+    "explanation": "The article highlights how UN Observers acts as victim within the scope of russian military actions, specifically referencing 'Russian military superiority' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0070",
+    "language": "ru",
+    "domain": "ukraine_russia",
+    "text": "Международные наблюдатели призывают к возобновлению мирных переговоров и дипломатическому урегулированию конфликта.",
+    "sentences": [
+      "Международные наблюдатели призывают к возобновлению мирных переговоров и дипломатическому урегулированию конфликта"
+    ],
+    "entities": [
+      {
+        "mention": "Russia",
+        "start_offset": 0,
+        "end_offset": 6,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "Western media spreads lies about Russia",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Russia acts as victim within the scope of western disinformation & aggression, specifically referencing 'Western media spreads lies about Russia' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0071",
+    "language": "pt",
+    "domain": "ukraine_russia",
+    "text": "Relatórios de observadores internacionais destacam a urgência de negociações de paz para cessar as hostilidades.",
+    "sentences": [
+      "Relatórios de observadores internacionais destacam a urgência de negociações de paz para cessar as hostilidades"
+    ],
+    "entities": [
+      {
+        "mention": "UN Observers",
+        "start_offset": 0,
+        "end_offset": 12,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Peace & Negotiations",
+    "subnarrative": "Negotiations are blocked by Ukraine",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how UN Observers acts as victim within the scope of peace & negotiations, specifically referencing 'Negotiations are blocked by Ukraine' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0072",
+    "language": "ru",
+    "domain": "climate_change",
+    "text": "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы. В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии.",
+    "sentences": [
+      "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы",
+      "В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии"
+    ],
+    "entities": [
+      {
+        "mention": "Fossil Fuel Coalition",
+        "start_offset": 0,
+        "end_offset": 21,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Climate policies destroy industry",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Fossil Fuel Coalition acts as victim within the scope of economic impact & energy policy, specifically referencing 'Climate policies destroy industry' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0073",
+    "language": "ru",
+    "domain": "ukraine_russia",
+    "text": "Официальные представители заявили, что расширение блока НАТО создало угрозы безопасности. Дипломатические источники подчеркивают необходимость гарантий нейтрального статуса. Экономические санкции вызвали рост цен на энергоресурсы в Европе.",
+    "sentences": [
+      "Официальные представители заявили, что расширение блока НАТО создало угрозы безопасности",
+      "Дипломатические источники подчеркивают необходимость гарантий нейтрального статуса",
+      "Экономические санкции вызвали рост цен на энергоресурсы в Европе"
+    ],
+    "entities": [
+      {
+        "mention": "UN Observers",
+        "start_offset": 0,
+        "end_offset": 12,
+        "roles": [
+          "Villain"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "NATO provoked the conflict",
+    "evidence_sentence_ids": [
+      2
+    ],
+    "explanation": "The article highlights how UN Observers acts as villain within the scope of western disinformation & aggression, specifically referencing 'NATO provoked the conflict' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0074",
+    "language": "en",
+    "domain": "climate_change",
+    "text": "Environmental activists urge governments to phase out fossil fuel subsidies immediately. Economists suggest that green transition investments will create long-term employment in solar and wind sectors.",
+    "sentences": [
+      "Environmental activists urge governments to phase out fossil fuel subsidies immediately",
+      "Economists suggest that green transition investments will create long-term employment in solar and wind sectors"
+    ],
+    "entities": [
+      {
+        "mention": "Climate Scientists",
+        "start_offset": 0,
+        "end_offset": 18,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Climate agenda is for global control",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Climate Scientists acts as antagonist within the scope of political motivation, specifically referencing 'Climate agenda is for global control' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0075",
+    "language": "pt",
+    "domain": "climate_change",
+    "text": "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética. Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial.",
+    "sentences": [
+      "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética",
+      "Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial"
+    ],
+    "entities": [
+      {
+        "mention": "Fossil Fuel Coalition",
+        "start_offset": 0,
+        "end_offset": 21,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Economic Impact & Energy Policy",
+    "subnarrative": "Climate policies destroy industry",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Fossil Fuel Coalition acts as victim within the scope of economic impact & energy policy, specifically referencing 'Climate policies destroy industry' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0076",
+    "language": "hi",
+    "domain": "climate_change",
+    "text": "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।",
+    "sentences": [
+      "जलवायु परिवर्तन पर हालिया रिपोर्टों ने नवीकरणीय ऊर्जा के महत्व पर जोर दिया है। कुछ विशेषज्ञों का तर्क है कि कार्बन कर से उद्योगों पर वित्तीय दबाव बढ़ेगा।"
+    ],
+    "entities": [
+      {
+        "mention": "Green Energy Council",
+        "start_offset": 0,
+        "end_offset": 20,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Political Motivation",
+    "subnarrative": "Taxation under green pretext",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Green Energy Council acts as protagonist within the scope of political motivation, specifically referencing 'Taxation under green pretext' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0077",
+    "language": "pt",
+    "domain": "climate_change",
+    "text": "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética. Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial.",
+    "sentences": [
+      "Debates sobre políticas climáticas apontam os desafios econômicos da transição energética",
+      "Críticos argumentam que regulamentações excessivas prejudicam a competitividade industrial"
+    ],
+    "entities": [
+      {
+        "mention": "Fossil Fuel Coalition",
+        "start_offset": 0,
+        "end_offset": 21,
+        "roles": [
+          "Antagonist"
+        ],
+        "main_role": "Antagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "CO2 is beneficial for plants",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Fossil Fuel Coalition acts as antagonist within the scope of climate science skepticism, specifically referencing 'CO2 is beneficial for plants' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0078",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Official statements from NATO members claimed that security guarantees were required for eastern expansion. However, Russian diplomats argued that Western expansion directly provoked tension. Energy prices in Europe increased sharply after trade sanctions were implemented. International observers called for immediate cease-fire negotiations in Geneva.",
+    "sentences": [
+      "Official statements from NATO members claimed that security guarantees were required for eastern expansion",
+      "However, Russian diplomats argued that Western expansion directly provoked tension",
+      "Energy prices in Europe increased sharply after trade sanctions were implemented",
+      "International observers called for immediate cease-fire negotiations in Geneva"
+    ],
+    "entities": [
+      {
+        "mention": "NATO",
+        "start_offset": 25,
+        "end_offset": 29,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Western Disinformation & Aggression",
+    "subnarrative": "NATO provoked the conflict",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how NATO acts as protagonist within the scope of western disinformation & aggression, specifically referencing 'NATO provoked the conflict' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0079",
+    "language": "ru",
+    "domain": "climate_change",
+    "text": "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы. В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии.",
+    "sentences": [
+      "Некоторые эксперты утверждают, что климатические модели не учитывают все природные факторы",
+      "В то же время экологи настаивают на ускоренном переходе к возобновляемым источникам энергии"
+    ],
+    "entities": [
+      {
+        "mention": "Industrial Union",
+        "start_offset": 0,
+        "end_offset": 16,
+        "roles": [
+          "Protagonist"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Climate Science Skepticism",
+    "subnarrative": "Global warming is a natural cycle",
+    "evidence_sentence_ids": [
+      1
+    ],
+    "explanation": "The article highlights how Industrial Union acts as protagonist within the scope of climate science skepticism, specifically referencing 'Global warming is a natural cycle' based on textual evidence."
+  },
+  {
+    "article_id": "art_dev_0080",
+    "language": "en",
+    "domain": "ukraine_russia",
+    "text": "Reports from Kyiv highlighted structural damage to military infrastructure during recent strikes. Western media outlets reported on foreign aid packages sent to assist civilian rehabilitation. Independent journalists documented ongoing diplomatic efforts aimed at resolving territorial disputes peacefully.",
+    "sentences": [
+      "Reports from Kyiv highlighted structural damage to military infrastructure during recent strikes",
+      "Western media outlets reported on foreign aid packages sent to assist civilian rehabilitation",
+      "Independent journalists documented ongoing diplomatic efforts aimed at resolving territorial disputes peacefully"
+    ],
+    "entities": [
+      {
+        "mention": "Kyiv",
+        "start_offset": 13,
+        "end_offset": 17,
+        "roles": [
+          "Victim"
+        ],
+        "main_role": "Protagonist"
+      }
+    ],
+    "narrative": "Ukrainian Regime Legitimacy",
+    "subnarrative": "Ukraine is a puppet of the US",
+    "evidence_sentence_ids": [
+      0
+    ],
+    "explanation": "The article highlights how Kyiv acts as victim within the scope of ukrainian regime legitimacy, specifically referencing 'Ukraine is a puppet of the US' based on textual evidence."
+  }
+]

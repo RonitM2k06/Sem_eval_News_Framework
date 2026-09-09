@@ -1,0 +1,38 @@
+# NarrativeGraph Model Configuration
+
+experiment_name: "narrativegraph_full"
+seed: 42
+
+data:
+  data_dir: "data"
+  languages: ["bg", "en", "hi", "pt", "ru"]
+  domains: ["ukraine_russia", "climate_change"]
+  max_seq_len: 256
+  max_sentences: 8
+  max_entities: 6
+  batch_size: 2
+
+model:
+  encoder_name: "xlm-roberta-base"
+  hidden_dim: 768
+  gnn_dim: 256
+  gnn_heads: 4
+  gnn_layers: 2
+  dropout: 0.1
+  use_graph: true
+  use_alignment: true
+  use_evidence_conditioning: true
+
+loss:
+  lambda_entity: 1.0
+  lambda_narrative: 1.0
+  lambda_evidence: 0.5
+  lambda_alignment: 0.5
+  lambda_generation: 1.0
+
+training:
+  epochs: 5
+  lr: 2e-5
+  weight_decay: 0.01
+  gradient_accumulation_steps: 4
+  fp16: true

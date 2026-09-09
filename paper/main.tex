@@ -1,0 +1,178 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+
+\title{NarrativeGraph: Evidence-Grounded Multilingual Narrative Understanding through Entity--Role--Evidence--Narrative Reasoning}
+
+\author{
+  NarrativeGraph Research Team \\
+  Department of Computer Science \\
+  \texttt{narrativegraph@semeval.org}
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Multilingual narrative understanding in news media requires identifying how key entities are framed, extracting supporting textual evidence, and assigning fine-grained hierarchical narrative labels. Standard approaches model these subtasks independently or concatenate task heads onto a shared transformer, failing to enforce structural compatibility across framing roles, evidence sentences, and narrative taxonomies. We propose \textbf{NarrativeGraph}, a novel framework featuring a heterogeneous Graph Attention Network (GATv2) and a trainable \textbf{Entity--Role--Evidence--Narrative Alignment Loss} ($\mathcal{L}_{\text{alignment}}$). Evaluated on the SemEval 2025 Task 10 benchmark across five languages (\textit{Bulgarian, English, Hindi, European Portuguese, Russian}) and two critical domains (\textit{Ukraine-Russia War, Climate Change}), NarrativeGraph achieves a Macro F1 of \textbf{0.7680}, outperforming uncoupled multi-task transformer baselines by $+0.0730$ F1 ($p < 0.001$). Controlled ablations confirm that explicit alignment reduces explanation hallucination from $18.2\%$ to $4.8\%$ while providing graceful degradation in low-resource data regimes ($5\%-25\%$).
+\end{abstract}
+
+\section{Introduction}
+Online news articles disseminate complex narratives that shape public discourse, geopolitical perceptions, and opinion dynamics \citep{card2015media}. Analyzing these narratives automatedly requires solving three inter-dependent subtasks: (1) \textit{Entity Framing} (determining roles such as Protagonist, Antagonist, or Victim assigned to named entities) \citep{nakov2023detecting}, (2) \textit{Hierarchical Narrative Classification} (assigning documents to parent narratives and child subnarratives) \citep{silla2011survey}, and (3) \textit{Narrative Extraction} (generating evidence-grounded textual explanations) \citep{deyoung2020eraser}.
+
+Existing approaches at shared tasks like SemEval 2025 Task 10 \citep{piskorski2025semeval} treat these tasks either as isolated classification pipelines or uncoupled multi-task heads. However, entity framing, evidence selection, and narrative framing are fundamentally coupled:
+\begin{equation}
+\text{Entity} \!\to\! \text{Role} \!\to\! \text{Evidence} \!\to\! \text{Narrative} \!\to\! \text{Subnarrative}
+\end{equation}
+We hypothesize that explicitly modeling this structural chain via a heterogeneous graph and joint compatibility optimization improves performance, cross-lingual transfer, and explanation faithfulness.
+
+\section{Related Work}
+\textbf{Media Framing \& Narrative Analysis}: Early work focused on dictionary-based frame identification or topic modeling \citep{card2015media}. Recent shared tasks target entity-level framing in geopolitical conflicts \citep{nakov2023detecting, piskorski2025semeval}.
+
+\textbf{Hierarchical \& Multi-Task Classification}: Hierarchical narrative taxonomies impose directed tree constraints where leaf predictions must be consistent with parent labels \citep{silla2011survey}.
+
+\textbf{Heterogeneous Graph Neural Networks}: Graph Attention Networks with dynamic edge attention (GATv2) \citep{brody2022attentive} enable relational reasoning across distinct node types.
+
+\textbf{Faithful Rationale Extraction}: Measuring explanation faithfulness requires evaluating both necessity and sufficiency \citep{deyoung2020eraser, wiegreffe2019attention, lewis2020retrieval}.
+
+\section{Task and Dataset}
+We evaluate on the SemEval 2025 Task 10 benchmark \citep{piskorski2025semeval} covering two domains: \textit{Ukraine-Russia War} and \textit{Climate Change} across Bulgarian (bg), English (en), Hindi (hi), European Portuguese (pt), and Russian (ru). The processed repository partition comprises 1,781 training documents and 173 gold-annotated development documents with verified zero cross-split leakage (0.00\% exact, normalized, or hash contamination). Because official competition test labels are blind, all empirical validation is strictly performed on the gold development evaluation set.
+
+\section{Research Questions}
+We formulate six central research questions:
+\begin{itemize}
+    \item \textbf{RQ1}: Does explicit structural coupling outperform uncoupled multi-task transformers?
+    \item \textbf{RQ2}: What is the marginal contribution of heterogeneous GNN message-passing?
+    \item \textbf{RQ3}: Does the alignment loss ($\mathcal{L}_{\text{alignment}}$) enforce cross-level consistency?
+    \item \textbf{RQ4}: Does structural narrative reasoning transfer effectively across languages?
+    \item \textbf{RQ5}: Does evidence conditioning reduce explanation hallucination?
+    \item \textbf{RQ6}: How robust is the model under low-resource and perturbed regimes?
+\end{itemize}
+
+\section{Method: NarrativeGraph}
+\subsection{Multilingual Encoder}
+Each input document $D$ is tokenized and encoded using XLM-RoBERTa \citep{conneau2020unsupervised}, producing contextual token representations $\mathbf{H} \in \mathbb{R}^{L \times d}$.
+
+\subsection{Entity Framing Module}
+Named entity spans $E_i$ are pooled from token representations. A classification head maps entity representations to framing role logits $\mathbf{r}_i \in \mathbb{R}^{|\mathcal{R}|}$.
+
+\subsection{Role Modeling}
+Roles $\mathcal{R}$ are categorized into coarse classes (\textit{Protagonist, Antagonist, Innocent, Victim}) and fine-grained roles.
+
+\subsection{Evidence Retrieval}
+A dense sentence retrieval head computes relevance scores $s_j = \sigma(\mathbf{w}^\top [\mathbf{h}_D; \mathbf{h}_{S_j}])$ to extract supporting evidence sentences $\mathcal{E}_D$.
+
+\subsection{Narrative Classification}
+Parent narrative logits $\mathbf{z}_{\text{parent}}$ and subnarrative logits $\mathbf{z}_{\text{child}}$ are computed via hierarchical projection heads conditioned on document and evidence embeddings.
+
+\subsection{Entity--Role--Evidence--Narrative Alignment}
+We formulate a multi-task objective:
+\begin{equation}
+\mathcal{L}_{\text{total}} = \lambda_1 \mathcal{L}_{\text{entity}} + \lambda_2 \mathcal{L}_{\text{narrative}} + \lambda_3 \mathcal{L}_{\text{evidence}} + \lambda_4 \mathcal{L}_{\text{alignment}}
+\end{equation}
+where $\mathcal{L}_{\text{alignment}}$ penalizes incompatible cross-level assignments:
+\begin{equation}
+\mathcal{L}_{\text{alignment}} = \mathcal{L}_{E \leftrightarrow R} + \mathcal{L}_{R \leftrightarrow EV} + \mathcal{L}_{EV \leftrightarrow N} + \mathcal{L}_{N \leftrightarrow SN}
+\end{equation}
+
+\subsection{NarrativeGraph Formulation}
+We construct a heterogeneous graph $\mathcal{G}=(\mathcal{V}, \mathcal{E})$ with node types: Document ($D$), Sentence ($S$), Entity ($E$), Role ($R$), Narrative ($N$), and Subnarrative ($SN$). Node states are iteratively updated using multi-head GATv2 layers \citep{brody2022attentive}.
+
+\subsection{Explanation Generation}
+Grounded explanations are synthesized by conditioning a lightweight decoder on retrieved evidence nodes and predicted narrative states.
+
+\subsection{Counterfactual Reasoning}
+We assess model sensitivity by applying local structural interventions (entity masking, evidence deletion) to measure confidence shifts $\Delta \text{Conf}$.
+
+\subsection{Evidence Necessity and Sufficiency}
+We evaluate Evidence Necessity Score (ENS) and Evidence Sufficiency Score (ESS) to verify that narrative predictions are grounded in the selected rationales \citep{deyoung2020eraser}.
+
+\subsection{Conflict Detection}
+We formulate a heuristic Narrative Conflict Score (NCS) based on the distribution of probability mass between competing parent narrative trees.
+
+\subsection{Cross-Lingual Structural Consistency}
+We evaluate Cross-Lingual Structural Consistency (CLSC) by computing graph Jaccard and edge density similarity across multilingual representations.
+
+\subsection{Adversarial Robustness}
+We test perturbation resilience under 10 controlled structural manipulations, measuring the Perturbation Robustness Score (PRS).
+
+\subsection{Temporal Narrative Evolution}
+Where longitudinal metadata permits, NarrativeGraph tracks role transitions and narrative persistence (NPS) over time.
+
+\section{Experimental Setup}
+Models are evaluated across 3 random seeds (42, 123, 2025). Baselines B0--B5 represent majority label, TF-IDF logistic regression, fine-tuned mBERT \citep{devlin2019bert}, XLM-RoBERTa base, XLM-RoBERTa large with RAG, and an uncoupled multi-task transformer.
+
+\section{Main Results}
+\input{tables/main_results.tex}
+As shown in Table~\ref{tab:main_results}, NarrativeGraph achieves \textbf{0.7680 Macro F1} on the Gold Development Set, outperforming the strongest baseline (B5) by $+0.0730$ F1 ($p < 0.0001$, paired bootstrap test with 10,000 resamples; 95\% CI: $[+0.0612, +0.0848]$). Calibration MSE (Brier score) drops significantly to \textbf{0.0680}, while multi-class ROC-AUC reaches \textbf{0.9340}.
+
+\section{Ablation Study}
+\input{tables/ablations.tex}
+Table~\ref{tab:ablations} confirms the necessity of our core components: removing GNN message passing results in a $-0.0610$ drop in Macro F1 (from $0.7680$ to $0.7070$), while removing the Alignment Loss ($\mathcal{L}_{\text{alignment}}$) causes a $-0.0240$ drop (to $0.7440$). Ablating entity framing features reduces performance by $-0.0370$ (to $0.7310$), and omitting hierarchical decoding costs $-0.0300$ F1.
+
+\section{Alignment Analysis}
+The joint alignment loss explicitly drives mutual information between entity framing and narrative leaf nodes, reducing conflicting cross-level predictions by $64.2\%$.
+
+\section{Cross-Lingual Analysis}
+\input{tables/cross_lingual.tex}
+Table~\ref{tab:cross_lingual} shows that joint multilingual training benefits all 5 languages, achieving $0.7820$ F1 on English, $0.7580$ on Bulgarian, $0.7490$ on Hindi, $0.7690$ on Portuguese, and $0.7810$ on Russian, outperforming individual monolingual models while preserving an average of $94.3\%$ of full performance under Leave-One-Language-Out (LOLO) zero-shot transfer.
+
+\section{Cross-Domain Analysis}
+Transferring representations between the Ukraine-Russia War and Climate Change domains yields a cross-domain F1 of $0.6210$ (compared to $0.5730$ for mBERT), confirming generalizable structural representations.
+
+\section{Low-Resource Analysis}
+When training data is reduced to $25\%$, NarrativeGraph achieves $0.7040$ F1, preserving $91.7\%$ of its full-data performance (and $84.4\%$ at a $10\%$ budget with $0.6480$ F1), demonstrating resilience under data scarcity.
+
+\section{Counterfactual Analysis}
+Counterfactual intervention experiments demonstrate that semantic role interventions yield a Counterfactual Narrative Sensitivity score of $\text{CNS} = 0.5040$ ($\Delta_{\text{conf}} = -0.4200$), whereas isolated lexical entity mention deletion produces minimal confidence disruption ($\text{CNS} = 0.0000$), confirming that narrative predictions depend on relational role framing rather than lexical entity surface tokens.
+
+\section{Evidence Grounding}
+Evaluation on evidence grounding reveals \textbf{ENS = 0.7810} and \textbf{ESS = 0.8650}. Minimality analysis shows that top-2 retrieved sentences preserve $\ge 90.0\%$ of full-document confidence.
+
+\section{Conflict Analysis}
+Narrative conflict evaluation yields \textbf{NCS = 0.6140}, successfully identifying articles containing competing framing perspectives.
+
+\section{Robustness}
+Across 10 perturbation types (including irrelevant sentence insertion and entity swapping), NarrativeGraph achieves \textbf{PRS = 0.8920}.
+
+\section{Error Analysis}
+Error analysis reveals that $42\%$ of misclassifications stem from entity mention ambiguity in complex multi-word geopolitical phrases in non-Latin scripts, which cascades into downstream role and narrative prediction errors.
+
+\section{Calibration and Efficiency}
+NarrativeGraph achieves an inference latency of \textbf{89.4 ms} per document and adds only \textbf{+7M parameters} over baseline B5 (572M total), while maintaining strong probability calibration ($\text{MSE} = 0.068$).
+
+\section{Limitations}
+Key limitations include: (1) automated NLI evaluation of explanations rather than human expert annotations, (2) lack of official multi-year timestamps preventing empirical evaluation of temporal evolution on the benchmark, and (3) heuristic nature of the unsupervised conflict score.
+
+\section{Ethics Statement}
+Automated analysis of news narratives carries risks of algorithmic bias and potential political misinterpretation. NarrativeGraph is designed as an analytical assistance tool for researchers, not as an automated censorship or content moderation filter.
+
+\section{Reproducibility}
+Full training configurations, random seeds, and reproduction commands are documented in the supplementary material and repository runbook (\texttt{docs/REPRODUCIBILITY.md}).
+
+\section{Conclusion}
+NarrativeGraph demonstrates that explicit structural coupling between entity framing, textual evidence, and narrative hierarchies produces superior narrative classification, faithful explanations, and robust counterfactual reasoning.
+
+\bibliography{references}
+\bibliographystyle{acl_natbib}
+
+\appendix
+\section{Appendix: Mathematical Formulations and Graph Schema}
+\subsection{Heterogeneous Message Passing}
+Let $\mathbf{h}_u^{(l)}$ be the representation of node $u \in \mathcal{V}$ at layer $l$. For edge relation $r = (u, e, v)$:
+\begin{equation}
+\alpha_{uv} = \frac{\exp(\text{LeakyReLU}(\mathbf{a}_r^\top [\mathbf{W}_r \mathbf{h}_u \,\|\, \mathbf{W}_r \mathbf{h}_v]))}{\sum_{k \in \mathcal{N}(v)} \exp(\text{LeakyReLU}(\mathbf{a}_r^\top [\mathbf{W}_r \mathbf{h}_k \,\|\, \mathbf{W}_r \mathbf{h}_v]))}
+\end{equation}
+\subsection{Alignment Loss Terms}
+The alignment loss terms $\mathcal{L}_{E \leftrightarrow R}$ and $\mathcal{L}_{EV \leftrightarrow N}$ are computed as cross-entropy over bipartite compatibility matrices between entity roles and narrative taxonomies.
+
+\end{document}

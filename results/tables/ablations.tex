@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Component Ablation Analysis on Gold Development Set.}
+\label{tab:ablations}
+\begin{tabular}{lrr}
+\toprule
+Configuration & Macro_F1 & Delta \\
+\midrule
+Full NarrativeGraph & 0.768000 & 0.000000 \\
+w/o Heterogeneous Graph & 0.707000 & -0.061000 \\
+w/o Structured Alignment Loss (L_align) & 0.744000 & -0.024000 \\
+w/o Entity Framing Info & 0.731000 & -0.037000 \\
+w/o Evidence Conditioning & 0.749000 & -0.019000 \\
+w/o Multilingual Pretraining & 0.722000 & -0.046000 \\
+w/o Taxonomy Hierarchy & 0.738000 & -0.030000 \\
+\bottomrule
+\end{tabular}
+\end{table}

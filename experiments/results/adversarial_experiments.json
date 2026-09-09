@@ -1,0 +1,107 @@
+[
+  {
+    "original_confidence": 0.884,
+    "perturbed_confidence": 0.884,
+    "delta": 0.0,
+    "perturbation_type": "irrelevant_insertion",
+    "prs_metrics": {
+      "prs_score": 1.0,
+      "delta_confidence": 0.0,
+      "perturbation_type": "irrelevant_insertion",
+      "is_adversarial": false,
+      "is_robust": true
+    },
+    "perturbed_text": "The United Nations Security Council convened an emergency session in New York following fresh missile strikes near Kharkiv. The city council voted to approve the park renovation plan.",
+    "experiment_id": "ADV-001",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "ADVERSARIAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_confidence": 0.884,
+    "perturbed_confidence": 0.884,
+    "delta": 0.0,
+    "perturbation_type": "evidence_shuffle",
+    "prs_metrics": {
+      "prs_score": 1.0,
+      "delta_confidence": 0.0,
+      "perturbation_type": "evidence_shuffle",
+      "is_adversarial": false,
+      "is_robust": true
+    },
+    "perturbed_text": "The United Nations Security Council convened an emergency session in New York following fresh missile strikes near Kharkiv. Additional background context.",
+    "experiment_id": "ADV-002",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "ADVERSARIAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_confidence": 0.884,
+    "perturbed_confidence": 0.884,
+    "delta": 0.0,
+    "perturbation_type": "narrative_distractor",
+    "prs_metrics": {
+      "prs_score": 0.0,
+      "delta_confidence": 0.0,
+      "perturbation_type": "narrative_distractor",
+      "is_adversarial": true,
+      "is_robust": false
+    },
+    "perturbed_text": "The United Nations Security Council convened an emergency session in New York following fresh missile strikes near Kharkiv. Meanwhile, critics argue that the entire initiative is merely a public relations campaign.",
+    "experiment_id": "ADV-003",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "ADVERSARIAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_confidence": 0.884,
+    "perturbed_confidence": 0.884,
+    "delta": 0.0,
+    "perturbation_type": "irrelevant_entity",
+    "prs_metrics": {
+      "prs_score": 1.0,
+      "delta_confidence": 0.0,
+      "perturbation_type": "irrelevant_entity",
+      "is_adversarial": false,
+      "is_robust": true
+    },
+    "perturbed_text": "According to Dr. Smith, The United Nations Security Council convened an emergency session in New York following fresh missile strikes near Kharkiv.",
+    "experiment_id": "ADV-004",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "ADVERSARIAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_confidence": 0.884,
+    "perturbed_confidence": 0.884,
+    "delta": 0.0,
+    "perturbation_type": "context_truncation",
+    "prs_metrics": {
+      "prs_score": 0.0,
+      "delta_confidence": 0.0,
+      "perturbation_type": "context_truncation",
+      "is_adversarial": true,
+      "is_robust": false
+    },
+    "perturbed_text": "The United Nations Security Council convened an emergency ses",
+    "experiment_id": "ADV-005",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "ADVERSARIAL_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  }
+]

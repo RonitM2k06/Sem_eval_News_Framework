@@ -1,0 +1,472 @@
+[
+  {
+    "original_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "counterfactual_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "original_confidence": 0.884,
+    "counterfactual_confidence": 0.884,
+    "delta_confidence": 0.0,
+    "intervention_type": "remove_entity",
+    "intervened_target": "United Nations Security Council",
+    "graph_diff": {
+      "nodes_added": [],
+      "nodes_removed": [],
+      "nodes_modified": [
+        {
+          "node_id": "ent_0",
+          "orig": {
+            "id": "ent_0",
+            "label": "Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Volodymyr Zelensky"
+          },
+          "modified": {
+            "id": "ent_0",
+            "label": "New York",
+            "type": "entity",
+            "info": "New York"
+          }
+        },
+        {
+          "node_id": "ent_1",
+          "orig": {
+            "id": "ent_1",
+            "label": "The United Nations Security Council",
+            "type": "entity",
+            "info": "The United Nations Security Council"
+          },
+          "modified": {
+            "id": "ent_1",
+            "label": "Ukrainian President Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Ukrainian President Volodymyr Zelensky"
+          }
+        }
+      ],
+      "edges_added": [],
+      "edges_removed": [],
+      "nodes_added_count": 0,
+      "nodes_removed_count": 0,
+      "nodes_modified_count": 2,
+      "edges_added_count": 0,
+      "edges_removed_count": 0,
+      "structural_change_score": 0.1
+    },
+    "cns_metrics": {
+      "metric_name": "CNS",
+      "cns_score": 0.0,
+      "delta_confidence": 0.0,
+      "directional_correctness": false,
+      "intervention_type": "remove_entity",
+      "interpretation": "High sensitivity indicates target prediction depends strongly on intervened structural node."
+    },
+    "original_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "intervened_text": "The  convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "experiment_id": "CF-001",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CF_INTERVENTION_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "counterfactual_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "original_confidence": 0.884,
+    "counterfactual_confidence": 0.884,
+    "delta_confidence": 0.0,
+    "intervention_type": "mask_entity",
+    "intervened_target": "United Nations Security Council",
+    "graph_diff": {
+      "nodes_added": [],
+      "nodes_removed": [],
+      "nodes_modified": [
+        {
+          "node_id": "ent_0",
+          "orig": {
+            "id": "ent_0",
+            "label": "Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Volodymyr Zelensky"
+          },
+          "modified": {
+            "id": "ent_0",
+            "label": "New York",
+            "type": "entity",
+            "info": "New York"
+          }
+        },
+        {
+          "node_id": "ent_1",
+          "orig": {
+            "id": "ent_1",
+            "label": "The United Nations Security Council",
+            "type": "entity",
+            "info": "The United Nations Security Council"
+          },
+          "modified": {
+            "id": "ent_1",
+            "label": "Ukrainian President Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Ukrainian President Volodymyr Zelensky"
+          }
+        }
+      ],
+      "edges_added": [],
+      "edges_removed": [],
+      "nodes_added_count": 0,
+      "nodes_removed_count": 0,
+      "nodes_modified_count": 2,
+      "edges_added_count": 0,
+      "edges_removed_count": 0,
+      "structural_change_score": 0.1
+    },
+    "cns_metrics": {
+      "metric_name": "CNS",
+      "cns_score": 0.0,
+      "delta_confidence": 0.0,
+      "directional_correctness": false,
+      "intervention_type": "mask_entity",
+      "interpretation": "High sensitivity indicates target prediction depends strongly on intervened structural node."
+    },
+    "original_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "intervened_text": "The [MASKED_ENTITY] convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "experiment_id": "CF-002",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CF_INTERVENTION_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "counterfactual_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "original_confidence": 0.884,
+    "counterfactual_confidence": 0.884,
+    "delta_confidence": 0.0,
+    "intervention_type": "remove_evidence",
+    "intervened_target": "Evidence / Sentence",
+    "graph_diff": {
+      "nodes_added": [],
+      "nodes_removed": [
+        {
+          "id": "sent_1",
+          "label": "Sent 2",
+          "type": "sentence",
+          "text": "Ukrainian President Volodymyr Zelensky r..."
+        },
+        {
+          "id": "ent_1",
+          "label": "The United Nations Security Council",
+          "type": "entity",
+          "info": "The United Nations Security Council"
+        },
+        {
+          "id": "role_1",
+          "label": "Neutral Actor",
+          "type": "role",
+          "info": "Mediator"
+        }
+      ],
+      "nodes_modified": [
+        {
+          "node_id": "ent_0",
+          "orig": {
+            "id": "ent_0",
+            "label": "Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Volodymyr Zelensky"
+          },
+          "modified": {
+            "id": "ent_0",
+            "label": "Ukrainian President Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Ukrainian President Volodymyr Zelensky"
+          }
+        }
+      ],
+      "edges_added": [],
+      "edges_removed": [
+        {
+          "source": "doc_0",
+          "target": "sent_1",
+          "relation": "CONTAINS"
+        },
+        {
+          "source": "doc_0",
+          "target": "ent_1",
+          "relation": "MENTIONS"
+        },
+        {
+          "source": "ent_1",
+          "target": "role_1",
+          "relation": "HAS_ROLE"
+        },
+        {
+          "source": "ent_1",
+          "target": "sent_1",
+          "relation": "MENTIONED_IN"
+        }
+      ],
+      "nodes_added_count": 0,
+      "nodes_removed_count": 3,
+      "nodes_modified_count": 1,
+      "edges_added_count": 0,
+      "edges_removed_count": 4,
+      "structural_change_score": 0.4
+    },
+    "cns_metrics": {
+      "metric_name": "CNS",
+      "cns_score": 0.0,
+      "delta_confidence": 0.0,
+      "directional_correctness": false,
+      "intervention_type": "remove_evidence",
+      "interpretation": "High sensitivity indicates target prediction depends strongly on intervened structural node."
+    },
+    "original_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "intervened_text": "Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "experiment_id": "CF-003",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CF_INTERVENTION_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "counterfactual_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "original_confidence": 0.884,
+    "counterfactual_confidence": 0.884,
+    "delta_confidence": 0.0,
+    "intervention_type": "mask_evidence",
+    "intervened_target": "Evidence / Sentence",
+    "graph_diff": {
+      "nodes_added": [],
+      "nodes_removed": [
+        {
+          "id": "ent_1",
+          "label": "The United Nations Security Council",
+          "type": "entity",
+          "info": "The United Nations Security Council"
+        },
+        {
+          "id": "role_1",
+          "label": "Neutral Actor",
+          "type": "role",
+          "info": "Mediator"
+        }
+      ],
+      "nodes_modified": [
+        {
+          "node_id": "ent_0",
+          "orig": {
+            "id": "ent_0",
+            "label": "Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Volodymyr Zelensky"
+          },
+          "modified": {
+            "id": "ent_0",
+            "label": "Ukrainian President Volodymyr Zelensky",
+            "type": "entity",
+            "info": "Ukrainian President Volodymyr Zelensky"
+          }
+        }
+      ],
+      "edges_added": [],
+      "edges_removed": [
+        {
+          "source": "doc_0",
+          "target": "ent_1",
+          "relation": "MENTIONS"
+        },
+        {
+          "source": "ent_1",
+          "target": "role_1",
+          "relation": "HAS_ROLE"
+        },
+        {
+          "source": "ent_1",
+          "target": "sent_1",
+          "relation": "MENTIONED_IN"
+        }
+      ],
+      "nodes_added_count": 0,
+      "nodes_removed_count": 2,
+      "nodes_modified_count": 1,
+      "edges_added_count": 0,
+      "edges_removed_count": 3,
+      "structural_change_score": 0.3
+    },
+    "cns_metrics": {
+      "metric_name": "CNS",
+      "cns_score": 0.0,
+      "delta_confidence": 0.0,
+      "directional_correctness": false,
+      "intervention_type": "mask_evidence",
+      "interpretation": "High sensitivity indicates target prediction depends strongly on intervened structural node."
+    },
+    "original_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "intervened_text": "[MASKED EVIDENCE SENTENCE]. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "experiment_id": "CF-004",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CF_INTERVENTION_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "counterfactual_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "original_confidence": 0.884,
+    "counterfactual_confidence": 0.464,
+    "delta_confidence": 0.42,
+    "intervention_type": "change_role",
+    "intervened_target": "United Nations Security Council",
+    "graph_diff": {
+      "nodes_added": [],
+      "nodes_removed": [],
+      "nodes_modified": [],
+      "edges_added": [],
+      "edges_removed": [],
+      "nodes_added_count": 0,
+      "nodes_removed_count": 0,
+      "nodes_modified_count": 0,
+      "edges_added_count": 0,
+      "edges_removed_count": 0,
+      "structural_change_score": 0.0
+    },
+    "cns_metrics": {
+      "metric_name": "CNS",
+      "cns_score": 0.504,
+      "delta_confidence": 0.42,
+      "directional_correctness": true,
+      "intervention_type": "change_role",
+      "interpretation": "High sensitivity indicates target prediction depends strongly on intervened structural node."
+    },
+    "original_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "intervened_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid. ",
+    "experiment_id": "CF-005",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CF_INTERVENTION_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  },
+  {
+    "original_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "counterfactual_prediction": {
+      "parent_narrative": "Western Disinformation & Aggression",
+      "parent_confidence": 0.884,
+      "subnarrative": "NATO provoked the conflict",
+      "subnarrative_confidence": 0.842
+    },
+    "original_confidence": 0.884,
+    "counterfactual_confidence": 0.884,
+    "delta_confidence": 0.0,
+    "intervention_type": "insert_distractor",
+    "intervened_target": "Evidence / Sentence",
+    "graph_diff": {
+      "nodes_added": [
+        {
+          "id": "sent_2",
+          "label": "Sent 3",
+          "type": "sentence",
+          "text": "Note that local weather conditions remai..."
+        }
+      ],
+      "nodes_removed": [],
+      "nodes_modified": [],
+      "edges_added": [
+        {
+          "source": "doc_0",
+          "target": "sent_2",
+          "relation": "CONTAINS"
+        }
+      ],
+      "edges_removed": [],
+      "nodes_added_count": 1,
+      "nodes_removed_count": 0,
+      "nodes_modified_count": 0,
+      "edges_added_count": 1,
+      "edges_removed_count": 0,
+      "structural_change_score": 0.1
+    },
+    "cns_metrics": {
+      "metric_name": "CNS",
+      "cns_score": 0.0,
+      "delta_confidence": 0.0,
+      "directional_correctness": true,
+      "intervention_type": "insert_distractor",
+      "interpretation": "High sensitivity indicates target prediction depends strongly on intervened structural node."
+    },
+    "original_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid.",
+    "intervened_text": "The United Nations Security Council convened an emergency session in New York. Ukrainian President Volodymyr Zelensky requested immediate aid. Note that local weather conditions remained mostly sunny throughout the afternoon.",
+    "experiment_id": "CF-006",
+    "provenance": {
+      "status": "VERIFIED",
+      "source": "CF_INTERVENTION_LAB",
+      "model": "NarrativeGraph-GATv2",
+      "seed": 42
+    }
+  }
+]

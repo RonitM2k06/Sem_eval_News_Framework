@@ -1,0 +1,29 @@
+{
+  "full_confidence": 0.884,
+  "no_evidence_confidence": 0.884,
+  "evidence_only_confidence": 0.884,
+  "evidence_metrics": {
+    "ens_score": 0.0,
+    "ess_score": 1.0,
+    "ems_score": 1.0,
+    "minimal_sentence_count": 1,
+    "preservation_curve": [
+      0.884,
+      0.884,
+      0.884
+    ]
+  },
+  "preservation_curve": [
+    0.884,
+    0.884,
+    0.884
+  ],
+  "top_evidence_sentence": "The United Nations Security Council convened an emergency session in New York",
+  "experiment_id": "EV-001",
+  "provenance": {
+    "status": "VERIFIED",
+    "source": "EVIDENCE_GROUNDING_LAB",
+    "model": "NarrativeGraph-GATv2",
+    "seed": 42
+  }
+}

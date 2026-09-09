@@ -1,0 +1,22 @@
+{
+  "dominant_narrative": "Western Disinformation & Aggression",
+  "dominant_confidence": 0.884,
+  "competing_narrative": "Alternative Perspective",
+  "competing_confidence": 0.38,
+  "conflict_metrics": {
+    "ncs_score": 0.4149,
+    "competing_probability_ratio": 0.4299,
+    "role_incompatibility": 0.3,
+    "evidence_overlap": 0.45,
+    "has_conflict": false
+  },
+  "supporting_evidence": "The United Nations Security Council convened an emergency session in New York",
+  "competing_evidence": "While western delegates framed the situation as unprovoked aggression, opposition envoys maintained that military action was a necessary defensive measure",
+  "experiment_id": "CNF-001",
+  "provenance": {
+    "status": "VERIFIED",
+    "source": "CONFLICT_EXPLORER_LAB",
+    "model": "NarrativeGraph-GATv2",
+    "seed": 42
+  }
+}

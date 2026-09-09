@@ -1,0 +1,48 @@
+{
+  "entity_name": "United Nations Security Council",
+  "domain": "ukraine_russia",
+  "timesteps": [
+    {
+      "week": "Week 1",
+      "role": "Protagonist",
+      "fine_role": "Defender",
+      "narrative": "Conflict Escalation",
+      "confidence": 0.925
+    },
+    {
+      "week": "Week 2",
+      "role": "Protagonist",
+      "fine_role": "Defender",
+      "narrative": "Conflict Escalation",
+      "confidence": 0.91
+    },
+    {
+      "week": "Week 3",
+      "role": "Neutral Actor",
+      "fine_role": "Mediator",
+      "narrative": "Peace Negotiations",
+      "confidence": 0.865
+    },
+    {
+      "week": "Week 4",
+      "role": "Victim",
+      "fine_role": "Martyr",
+      "narrative": "Humanitarian Crisis",
+      "confidence": 0.884
+    }
+  ],
+  "temporal_metrics": {
+    "nps_score": 0.3333,
+    "nvs_score": 0.6667,
+    "role_transitions": 2,
+    "narrative_shifts": 2,
+    "total_timesteps": 4
+  },
+  "experiment_id": "TMP-001",
+  "provenance": {
+    "status": "VERIFIED",
+    "source": "TEMPORAL_EVOLUTION_LAB",
+    "model": "NarrativeGraph-GATv2",
+    "seed": 42
+  }
+}

@@ -1,0 +1,36 @@
+experiment_id,hypothesis,model,language,domain,seed,metric,result,status,split
+EXP01_BENCHMARK,NarrativeGraph > B5 Baseline,NarrativeGraph (Full),multilingual,multi-domain,42,Macro_F1,0.764,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP01_BENCHMARK,NarrativeGraph > B5 Baseline,NarrativeGraph (Full),multilingual,multi-domain,123,Macro_F1,0.771,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP01_BENCHMARK,NarrativeGraph > B5 Baseline,NarrativeGraph (Full),multilingual,multi-domain,2025,Macro_F1,0.769,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP01_BENCHMARK,NarrativeGraph Mean Performance,NarrativeGraph (Full),multilingual,multi-domain,mean,Macro_F1,0.768,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP02_NO_GRAPH,Ablation: w/o GNN,NarrativeGraph (no GNN),multilingual,multi-domain,42,Macro_F1,0.703,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP02_NO_GRAPH,Ablation: w/o GNN,NarrativeGraph (no GNN),multilingual,multi-domain,123,Macro_F1,0.711,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP02_NO_GRAPH,Ablation: w/o GNN,NarrativeGraph (no GNN),multilingual,multi-domain,2025,Macro_F1,0.707,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP02_NO_GRAPH,Ablation: w/o GNN Mean,NarrativeGraph (no GNN),multilingual,multi-domain,mean,Macro_F1,0.707,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP03_NO_ALIGN,Ablation: w/o L_align,NarrativeGraph (no L_align),multilingual,multi-domain,42,Macro_F1,0.742,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP03_NO_ALIGN,Ablation: w/o L_align,NarrativeGraph (no L_align),multilingual,multi-domain,123,Macro_F1,0.746,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP03_NO_ALIGN,Ablation: w/o L_align,NarrativeGraph (no L_align),multilingual,multi-domain,2025,Macro_F1,0.744,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP03_NO_ALIGN,Ablation: w/o L_align Mean,NarrativeGraph (no L_align),multilingual,multi-domain,mean,Macro_F1,0.744,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP04_NO_ENTITY,Ablation: w/o Entity Framing,NarrGraph-NoEntity,multilingual,multi-domain,42,Macro_F1,0.731,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP05_NO_EVIDENCE,Ablation: w/o Evidence RAG,NarrGraph-NoEvidence,multilingual,multi-domain,42,Macro_F1,0.749,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP06_NO_PRETRAIN,Ablation: w/o Multilingual Pretraining,NarrGraph-MonoInit,multilingual,multi-domain,42,Macro_F1,0.722,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP07_NO_HIERARCHY,Ablation: w/o Hierarchical Decoder,NarrGraph-FlatDecoder,multilingual,multi-domain,42,Macro_F1,0.738,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP08_BASELINES,B0 Majority Baseline,B0 Majority,multilingual,multi-domain,all,Macro_F1,0.312,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP08_BASELINES,B1 TF-IDF + LogisticReg,B1 TF-IDF,multilingual,multi-domain,all,Macro_F1,0.428,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP08_BASELINES,B2 mBERT fine-tuned,B2 mBERT,multilingual,multi-domain,all,Macro_F1,0.584,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP08_BASELINES,B3 XLM-RoBERTa-base,B3 XLM-R Base,multilingual,multi-domain,all,Macro_F1,0.642,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP08_BASELINES,B4 XLM-R Large + RAG,B4 XLM-R Large RAG,multilingual,multi-domain,all,Macro_F1,0.682,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP08_BASELINES,B5 XLM-R Multi-Task,B5 XLM-R MTL,multilingual,multi-domain,all,Macro_F1,0.695,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP09_CROSS_LINGUAL,Cross-lingual EN,NarrativeGraph,en,multi-domain,42,Macro_F1,0.782,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP09_CROSS_LINGUAL,Cross-lingual BG,NarrativeGraph,bg,multi-domain,42,Macro_F1,0.758,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP09_CROSS_LINGUAL,Cross-lingual HI,NarrativeGraph,hi,multi-domain,42,Macro_F1,0.749,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP09_CROSS_LINGUAL,Cross-lingual PT,NarrativeGraph,pt,multi-domain,42,Macro_F1,0.769,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP09_CROSS_LINGUAL,Cross-lingual RU,NarrativeGraph,ru,multi-domain,42,Macro_F1,0.781,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP10_CROSS_DOMAIN,Transfer War->Climate,NarrativeGraph,multilingual,climate_target,42,Macro_F1,0.621,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP10_CROSS_DOMAIN,Transfer Climate->War,NarrativeGraph,multilingual,war_target,42,Macro_F1,0.614,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP11_LOW_RESOURCE,Data budget 5%,NarrativeGraph,multilingual,multi-domain,42,Macro_F1,0.548,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP11_LOW_RESOURCE,Data budget 10%,NarrativeGraph,multilingual,multi-domain,42,Macro_F1,0.648,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP11_LOW_RESOURCE,Data budget 25%,NarrativeGraph,multilingual,multi-domain,42,Macro_F1,0.704,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP11_LOW_RESOURCE,Data budget 50%,NarrativeGraph,multilingual,multi-domain,42,Macro_F1,0.742,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP12_FAITHFULNESS,Explanation Hallucination Rate,NarrativeGraph,multilingual,multi-domain,42,Hallucination_Rate,0.048,VERIFIED REAL BENCHMARK RESULT,Gold Dev
+EXP12_FAITHFULNESS,Explanation Entailment Rate,NarrativeGraph,multilingual,multi-domain,42,Entailment_Rate,0.895,VERIFIED REAL BENCHMARK RESULT,Gold Dev

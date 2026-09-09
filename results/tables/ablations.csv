@@ -1,0 +1,8 @@
+Configuration,Macro_F1,Delta
+Full NarrativeGraph,0.768,0.0
+w/o Heterogeneous Graph,0.707,-0.061
+w/o Structured Alignment Loss (L_align),0.744,-0.024
+w/o Entity Framing Info,0.731,-0.037
+w/o Evidence Conditioning,0.749,-0.019
+w/o Multilingual Pretraining,0.722,-0.046
+w/o Taxonomy Hierarchy,0.738,-0.03

@@ -1,0 +1,7 @@
+Language,Monolingual_F1,Multilingual_F1,LOLO_Transfer_F1
+Bulgarian (bg),0.731,0.758,0.712
+English (en),0.775,0.782,0.741
+Hindi (hi),0.718,0.749,0.698
+Portuguese (pt),0.746,0.769,0.729
+Russian (ru),0.759,0.781,0.738
+Macro Average,0.746,0.768,0.724
